@@ -32,19 +32,22 @@ button {
     border-radius: 10px;
 }
 
-button, .primary {
+.primary {
     background-color: #FF906D;
     border: none;
     color: #FFF;
 }
 
-button, .secondary {
+.secondary {
     background-color: transparent;
     border: 2px;
     border-style: solid;
     border-color: #FF906D;
     color: #FF906D;
 }
+
+.long {width: 240px;}
+
 
 .button:hover {
     transform: translateY(-3px);
