@@ -20,6 +20,7 @@ p, .body { font-size: 18px; }
 .regular { font-weight: 400; }
 .medium { font-weight: 500; }
 .bold { font-weight: 700; }
+.error { font-size: 12px; color: #F53F3F}
 
 /* BUTTON */
 button {
@@ -32,13 +33,13 @@ button {
     border-radius: 10px;
 }
 
-button, .primary {
+.primary {
     background-color: #FF906D;
     border: none;
     color: #FFF;
 }
 
-button, .secondary {
+.secondary {
     background-color: transparent;
     border: 2px;
     border-style: solid;
@@ -46,9 +47,40 @@ button, .secondary {
     color: #FF906D;
 }
 
+.long {width: 240px;}
+
+
 .button:hover {
     transform: translateY(-3px);
     transition: all 0.5s ease;
 }
+
+/*INPUT FIELDS*/
+input[type=text], input[type=password], input[type=number], select {
+    width: 320px;
+    padding: 12px 16px;
+    display: inline-block;
+    border: 1px solid #C5C5C5;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    
+  }
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #FFF2EE;
+    border: 1px solid #FF906D;
+  }
+
+label, option {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #333333;   
+    padding-bottom: 10px;
+}
+
 
 
