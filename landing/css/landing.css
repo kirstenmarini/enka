@@ -1,5 +1,5 @@
 body {
-    background-image: url("/Users/m1/enka/landing/assets/background.png");
+    background-image: url("../../landing/assets/background.png");
         background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 80px;
