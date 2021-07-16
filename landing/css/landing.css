@@ -1,5 +1,5 @@
 body {
-    background-image: url("../assets/landing/background.png");
+    background-image: url("/Users/m1/enka/landing/assets/background.png");
         background-size: cover;
     background-repeat: no-repeat;
     background-position-y: 80px;
@@ -51,10 +51,16 @@ body {
     padding: 25vh 50px 0 50px;
 }
 
-.wrapper h1,p,div {
+.wrapper h1, div {
     color: #ffffff;
     padding-bottom: 20px;
 }
+
+.wrapper p {
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
 
 .form-wrapper {
     display: flex;

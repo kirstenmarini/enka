@@ -20,6 +20,7 @@ p, .body { font-size: 18px; }
 .regular { font-weight: 400; }
 .medium { font-weight: 500; }
 .bold { font-weight: 700; }
+.error {color: #F53F3F}
 
 /* BUTTON */
 button {
