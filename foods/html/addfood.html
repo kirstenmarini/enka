@@ -5,15 +5,43 @@
         <title>Add Menu Item</title> 
     </head>
     <body>
-        <h1>Add Menu Item</h1>
-        <nav>
+        <nav class="main-menu">
             <ul>
-                <li><a href="">Customers</a></li>
-                <li><a href="">Food List</a></li>
-                <li><a href="">Orders</a></li>
-                <li><a href="" class="sig">Sign Out</a></li>
+                <img src="../../navbar/assets/enka-hlogo.svg" class="fa"></i>
             </ul>
-        </nav>
+    
+            <ul>
+                <li>
+                    <a href="customers.html">
+                        <img src="../../navbar/assets/customers.svg" class="fa"></i>
+                        <span class="nav-text"> Customers </span>
+                    </a>                
+                </li>
+    
+                <li>
+                    <a href="foods.html">
+                        <img src="../../navbar/assets/foods.svg" class="fa"></i>
+                        <span class="nav-text"> Foods </span>
+                    </a>                
+                </li>
+    
+                <li>
+                    <a href="orders.html">
+                        <img src="../../navbar/assets/orders.svg" class="fa"></i>
+                        <span class="nav-text"> Orders</span>
+                    </a>                
+                </li>
+            </ul>
+    
+            <ul class="logout">
+                <li>
+                    <a href="#">
+                            <img src="../../navbar/assets/logout.svg" class="fa">
+                        <span class="nav-text"> Logout </span>
+                    </a>
+                </li>  
+            </ul>
+            <h1>Add Menu Item</h1>
         <form>
             <label for="food_name">Name</label>
             <input type="text" id="food_name" name="food_name" placeholder="Ex. Cream Cheese Ice Cream">
