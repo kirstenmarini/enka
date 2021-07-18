@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf=8">
-        <title>Sweet and Sour Pork</title> 
+        <title>Add Menu Item</title> 
     </head>
     <body>
         <nav class="main-menu">
@@ -42,21 +42,20 @@
                 </li>  
             </ul>
         </nav>
-        <header>
-            <h1>Food Item</h1>
-        </header>
-        <section>
-            <img src="../assets/sweet_and_sour_pork.png">
-            <h2>Sweet and Sour Pork</h2>
-            <h2>Php 67.00</h2>
-            <h2>20 stocks</h2>
-            <p>Fried pork glazed with sweet and sour sauce</p>
-        </section>
-        <div>
-            <a href="foods.html" class="secondary">Back</a>
-        </div>
-        <div>
-            <a href="editfood2.html" class="primary">Edit</a>
-        </div>
+            <h1>Add Menu Item</h1>
+        <form>
+            <label for="food_name">Name</label>
+            <input type="text" id="food_name" name="food_name" value="Halo Halo">
+            <label for="food_image">Image</label>
+            <input type="file" id="food_image" name="food_image">
+            <label for="price">Price</label>
+            <input type="number" id="price" name="price" value="76">
+            <label for="stocks">Stocks</label>
+            <input type="number" id="stocks" name="stocks" value="20"> 
+            <label for="food_description">Name</label>
+            <input type="text" id="food_description" name="food_description" value="Traditional Philippine favorite dessert in a Chinese restaurant">
+            <input type="submit" class="primary" value="Save">
+        </form>
+        <a href="foods.html" class="secondary">Cancel</a>
     </body>
 </html>
