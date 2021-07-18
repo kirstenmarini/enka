@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf=8">
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="stylesheet" href="../../nav.css">
         <title>Add Menu Item</title> 
     </head>
     <body>
@@ -9,7 +11,6 @@
             <ul>
                 <img src="../../navbar/assets/enka-hlogo.svg" class="fa"></i>
             </ul>
-    
             <ul>
                 <li>
                     <a href="customers.html">
@@ -32,7 +33,6 @@
                     </a>                
                 </li>
             </ul>
-    
             <ul class="logout">
                 <li>
                     <a href="#">
@@ -41,20 +41,43 @@
                     </a>
                 </li>  
             </ul>
+        </nav>
+        <header>
             <h1>Add Menu Item</h1>
-        <form>
-            <label for="food_name">Name</label>
-            <input type="text" id="food_name" name="food_name" placeholder="Ex. Cream Cheese Ice Cream">
-            <label for="food_image">Image</label>
-            <input type="file" id="food_image" name="food_image">
-            <label for="price">Price</label>
-            <input type="number" id="price" name="price" placeholder="00.00">
-            <label for="stocks">Stocks</label>
-            <input type="number" id="stocks" name="stocks" placeholder="0"> 
-            <label for="food_description">Name</label>
-            <input type="text" id="food_description" name="food_description" placeholder="Insert description of food item here">
-            <input type="submit" class="submit_button" value="Save">
-        </form>
-        <a href="/foods/html/" class="cancel_button">Cancel</a>
+        </header>
+        <section>
+            <form>
+                <label for="food_name">Name</label>
+                <input type="text" id="food_name" name="food_name" placeholder="Ex. Cream Cheese Ice Cream">
+            </form>
+    
+            <form>
+                <label for="food_image">Image</label>
+                <input type="file" id="food_image" name="food_image">
+            </form>
+    
+            <form>
+                <label for="price">Price</label>
+                <input type="number" id="price" name="price" placeholder="00.00">
+            </form>
+    
+            <form>
+                <label for="stocks">Stocks</label>
+                <input type="number" id="stocks" name="stocks" placeholder="0"> 
+            </form>
+    
+            <form>
+                <label for="food_description">Name</label>
+                <input type="text" id="food_description" name="food_description" placeholder="Insert description of food item here">
+            </form>
+        </section>
+        <div>
+            <form>
+                <input type="submit" class="primary" value="Save">
+            </form>
+        </div>
+        <div>   
+            <a href="foods.html" class="secondary">Cancel</a>
+        </div>
     </body>
 </html>
