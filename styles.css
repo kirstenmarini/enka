@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0px;
     padding: 0;
   }
 
 /* FONTS */
-h1, h2, p, input {
+h1, h2, p, input, tr {
     font-family: 'DM Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -16,6 +16,7 @@ h1, h2, p, input {
 h1, .header { font-size: 28px; }
 h2, .subheader { font-size: 20px; }
 p, .body { font-size: 18px; }
+td {font-size: 18px;}
 
 .regular { font-weight: 400; }
 .medium { font-weight: 500; }
@@ -28,8 +29,11 @@ button {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+    text-decoration: none;
     cursor: pointer;
     display: inline-block;
+    border: 2px;
+    border-style: solid;
     border-radius: 10px;
 }
 
@@ -41,18 +45,43 @@ button {
 
 .secondary {
     background-color: transparent;
-    border: 2px;
-    border-style: solid;
+
     border-color: #FF906D;
     color: #FF906D;
 }
 
+.caution {
+    background-color: #F53F3F;
+    border-color: #F53F3F;
+    color: #FFF;
+}
+
 .long {width: 240px;}
+.short {padding: 8px 16px;
+        width: 120px;
+        font-weight: 500;}
 
 
 .button:hover {
     transform: translateY(-3px);
     transition: all 0.5s ease;
+}
+
+/*FORM*/
+.form-wrapper {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    border-radius: 5px;
+    background-color:transparent;
+    padding: 10px;
+}
+
+.submit {
+    position:absolute;
+    left: 280px;
+    padding: 50px 20px 50px 10px;
+    display: grid;
+    grid-template-rows: 70% 30%;
 }
 
 /*INPUT FIELDS*/
@@ -80,7 +109,24 @@ label, option {
     font-weight: 700;
     color: #333333;   
     padding-bottom: 10px;
+    padding-right: 10px;
 }
 
+/*TABLE*/
+.content {
+    margin-top: 20px;
+    margin-left: 280px;
+}
 
+table {
+    width: 1100px;
+}
+th {
+    padding: 10px 0;
+    text-align: justify;
+}
+
+td {
+    padding: 5px 0;
+}
 
