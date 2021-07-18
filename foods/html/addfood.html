@@ -43,42 +43,44 @@
             </li>  
         </ul>
     </nav>
-        <header>
-            <h1>Add Menu Item</h1>
+        <header class="content">
+            <h1 class= "header bold">Add Menu Item</h1>
         </header>
-        <section>
-            <form>
+        <section class="content">
+            <form class="form-wrapper"> 
                 <label for="food_name">Name</label>
                 <input type="text" id="food_name" name="food_name" placeholder="Ex. Cream Cheese Ice Cream">
             </form>
     
-            <form>
+            <form class="form-wrapper">
                 <label for="food_image">Image</label>
                 <input type="file" id="food_image" name="food_image">
             </form>
     
-            <form>
+            <form class="form-wrapper">
                 <label for="price">Price</label>
                 <input type="number" id="price" name="price" placeholder="00.00">
             </form>
     
-            <form>
+            <form class="form-wrapper">
                 <label for="stocks">Stocks</label>
                 <input type="number" id="stocks" name="stocks" placeholder="0"> 
             </form>
     
-            <form>
+            <form class="form-wrapper">
                 <label for="food_description">Name</label>
                 <input type="text" id="food_description" name="food_description" placeholder="Insert description of food item here">
             </form>
         </section>
-        <div>
+
+        <div class="submit">
+            <form > 
+                    <button class="primary long"> Save </button>
+                </a> 
+            </form>        
             <form>
-                <input type="submit" class="primary button" value="Save">
+                    <button class="secondary long"> Cancel </button>
+                </a> 
             </form>
-        </div>
-        <div>   
-            <a href="foods.html" class="secondary">Cancel</a>
-        </div>
     </body>
 </html>
