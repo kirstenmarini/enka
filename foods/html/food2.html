@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../css/food_no.css">
     <meta charset="utf-8">
     <title> Enka | Food </title>
 </head>
@@ -14,7 +15,7 @@
 
         <ul>
             <li>
-                <a href="customers.html">
+                <a href="../../customers/html/customers.html">
                     <img src="../../navbar/assets/customers.svg" class="fa">
                     <span class="nav-text"> Customers </span>
                 </a>                
@@ -43,21 +44,23 @@
             </li>  
         </ul>
     </nav>
-        <header>
-            <h1>Food Item</h1>
-        </header>
-        <section>
+    <header class="content">
+        <h1 class="header bold">Food Item</h1>
+    </header>
+        <section class="content">
             <img src="../assets/sweet_and_sour_pork.png">
-            <h2>Sweet and Sour Pork</h2>
+            <h2 class="subheader bold">Sweet and Sour Pork</h2>
             <h2>Php 67.00</h2>
-            <h2>20 stocks</h2>
+            <h2 class="stocks">20 stocks</h2>
             <p>Fried pork glazed with sweet and sour sauce</p>
         </section>
-        <div>
-            <a href="foods.html" class="secondary">Back</a>
-        </div>
-        <div>
-            <a href="editfood2.html" class="primary">Edit</a>
+        <div class="submit">
+            <a href="editfood2.html">
+                <button class="primary long"> Edit </button>
+            </a>
+            <a href="foods.html">
+                <button class="secondary long"> Cancel </button>
+            </a>     
         </div>
     </body>
 </html>
