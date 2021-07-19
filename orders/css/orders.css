@@ -2,21 +2,20 @@
 
 .customer-wrapper{
     display: grid;
-    grid-template-columns: 30% 20%;
+    grid-template-columns: 350px 20%;
     align-items:center;
 }
 .order-form {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    grid-row-gap: 50px;
-    padding:30px 0;
+    grid-template-columns: 255px 255px 255px;
+    grid-template-rows: 280px 280px;
+    grid-gap: 50px;
 }
 
 .order-wrapper{
     height: 100%;
-    width: 80%;
-    padding: 40px 20px;
+    width: 100%;
+    padding: 20px 20px;
     border: 1px solid #C5C5C5;
     border-radius: 10px;
 }
@@ -41,4 +40,35 @@ input[type=number] {
 
 p {
     padding: 2px;
+}
+
+.order_summary {
+    display: grid;
+    background:#FFF;
+    border-left:1px solid #c5c5c5;
+    grid-template-rows: 5% 60% 5% 20%;
+    position:absolute;
+    bottom:0px;
+    height:100%;
+    right:0px;
+    width: 400px;
+    padding: 30px;
+}
+
+.totality-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.totality-wrapper > p {
+    text-align: right;
+}
+
+.long {
+    width: 339px;
+    margin-top: 20px;
+}
+
+table {
+    width: 339px;
 }

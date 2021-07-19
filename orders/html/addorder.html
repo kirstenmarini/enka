@@ -48,80 +48,90 @@
             <h1 class="header bold">Order Form</h1>
         </header>
         <div class="content">
-            <div class="customer-wrapper">
-                <div>
-                    <form >
-                        <label for="order_customer_name">Customer Name</label>
-                            <select name="order_customer_name" id="order_customer_name">
-                                <option value="andrey_bonanza">Andrey Bonanza</option>
-                                <option value="elyzza_gonzales">Elyzza Gonzales</option>
-                                <option value="erin_carandang">Erin Carandang</option>
-                                <option value="jenny_peng">Jenny Peng</option>
-                                <option value="seirus_alonzo">Seirus Alonzo</option>
-                            </select>
+                <div class="customer-wrapper">
+                    <div>
+                        <form >
+                            <label for="order_customer_name">Customer Name</label>
+                                <select name="order_customer_name" id="order_customer_name">
+                                    <option value="andrey_bonanza">Andrey Bonanza</option>
+                                    <option value="elyzza_gonzales">Elyzza Gonzales</option>
+                                    <option value="erin_carandang">Erin Carandang</option>
+                                    <option value="jenny_peng">Jenny Peng</option>
+                                    <option value="seirus_alonzo">Seirus Alonzo</option>
+                                </select>
+                        </form>
+                    </div>
+                    <div>
+                        <a href="../../customers/html/addcustomer.html">
+                            <button class="primary long"> Add Customer </button>
+                            </a> 
+                    </div>
+                </div>
+                <div class="order-form">
+                <div class="order-wrapper">
+                    <img src="../assets/small_beef_balls_rice.png">
+                    <p class="bold">Beef Balls Rice</p>
+                    <p class="light">Php 69.00</p>
+                    <form>
+                        <input type="number" id="beef_balls_rice_amount" name="beef_balls_rice_amount" placeholder="0"> 
                     </form>
-                    </div>
+                </div>
+                <div class="order-wrapper">
+                    <img src="../assets/small_sweet_and_sour_pork.png">
+                    <p class="bold">Sweet and Sour Pork</p>
+                    <p class="light">Php 67.00</p>
+                    <form>
+                        <input type="number" id="sweet_and_sour_pork_amount" name="sweet_and_sour_pork_amount" placeholder="0"> 
+                    </form>
+                </div>
+                <div class="order-wrapper">
+                    <img src="../assets/small_quails_egg_siomai.png">
+                    <p class="bold">Quail's Egg Siomai</p>
+                    <p class="light">Php 69.00</p>
+                    <form>
+                        <input type="number" id="squails_egg_siomai_amount" name="quails_egg_siomai_amount" placeholder="0"> 
+                    </form>
+                </div>
+                <div class="order-wrapper">
+                    <img src="../assets/small_crab_pinchers.png">
+                    <p class="bold">Crab Pinchers</p>
+                    <p class="light">Php 76.00</p>
+                    <form>
+                        <input type="number" id="scrab_pinchers_amount" name="crab_pinchers_amount" placeholder="0"> 
+                    </form>
+                </div>
+                <div class="order-wrapper">
+                    <img src="../assets/small_halo_halo.png">
+                    <p class="bold">Halo Halo</p>
+                    <p class="light">Php 100.00</p>
+                    <form>
+                        <input class= "short" type="number" id="halo_halo_amount" name="halo_halo_amount" placeholder="0"> 
+                    </form>
+                </div>
+                </div>
+            </div>
+            <div class="order_summary">
                 <div>
-                    <a href="../../customers/html/addcustomer.html">
-                        <button class="primary long"> Add Customer </button>
-                        </a> 
-                    </div>
-            </div>
-        <div class="order-form">
-            <div class="order-wrapper">
-                <img src="../assets/small_beef_balls_rice.png">
-                <p>Beef Balls Rice</p>
-                <p>Php 69.00</p>
-                <form>
-                    <input type="number" id="beef_balls_rice_amount" name="beef_balls_rice_amount" placeholder="0"> 
-                </form>
-            </div>
-            <div class="order-wrapper">
-                <img src="../assets/small_sweet_and_sour_pork.png">
-                <p>Sweet and Sour Pork</p>
-                <p>Php 67.00</p>
-                <form>
-                    <input type="number" id="sweet_and_sour_pork_amount" name="sweet_and_sour_pork_amount" placeholder="0"> 
-                </form>
-            </div>
-            <div class="order-wrapper">
-                <img src="../assets/small_quails_egg_siomai.png">
-                <p>Quail's Egg Siomai</p>
-                <p>Php 69.00</p>
-                <form>
-                    <input type="number" id="squails_egg_siomai_amount" name="quails_egg_siomai_amount" placeholder="0"> 
-                </form>
-            </div>
-            <div class="order-wrapper">
-                <img src="../assets/small_crab_pinchers.png">
-                <p>Crab Pinchers</p>
-                <p>Php 76.00</p>
-                <form>
-                    <input type="number" id="scrab_pinchers_amount" name="crab_pinchers_amount" placeholder="0"> 
-                </form>
-            </div>
-            <div class="order-wrapper">
-                <img src="../assets/small_halo_halo.png">
-                <p>Halo Halo</p>
-                <p>Php 100.00</p>
-                <form>
-                    <input class= "short" type="number" id="halo_halo_amount" name="halo_halo_amount" placeholder="0"> 
-                </form>
-            </div>
-        </div>
-        <div>
-            <h1 class= "bold">Summary</h1>
-            <h2 class="body regular">Total</h2>
-            <p class="subheader bold"> PHP 00.00 </p>
-        </div>
-        </div>
-        <div class="submit">
-            <form class="save">
-                <button class="primary long"> Confirm </button>
-            </form>
-            <form class="save">
-                <button class="secondary long"> Cancel </button>
-            </form>     
+                    <h1 class= "bold">Summary</h1>
+                </div>
+                <div>
+                    <table>
+                        <tr></tr>
+                        <tr></tr>
+                    </table>
+                </div>
+                <div class="totality-wrapper">
+                    <h2 class="body regular light">Total</h2>
+                    <p class="subheader bold"> PHP 00.00 </p>
+                </div>
+                <div>
+                    <form class="save">
+                        <button class="primary long"> Confirm </button>
+                    </form>
+                    <form class="save">
+                        <button class="secondary long"> Cancel </button>
+                    </form>     
+                </div>
         </div>
     </body>
 </html>
