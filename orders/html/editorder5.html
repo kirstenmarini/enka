@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../css/orders.css">
     <meta charset="utf-8">
     <title> Enka | Orders </title>
 </head>
@@ -43,96 +44,110 @@
             </li>  
         </ul>
     </nav>
-        <header>
-            <h1>Order Form</h1>
-        </header>
-        <div>
-            <form>
-                <label for="order_customer_name">Customer Name</label>
-                <select name="order_customer_name" id="order_customer_name" value="andrey_bonanza">
-                    <option value="andrey_bonanza">Andrey Bonanza</option>
-                    <option value="elyzza_gonzales">Elyzza Gonzales</option>
-                    <option value="erin_carandang">Erin Carandang</option>
-                    <option value="jenny_peng">Jenny Peng</option>
-                    <option value="seirus_alonzo">Seirus Alonzo</option>
-                </select>
-            </form>
-            <a href="addcustomer.html" class="secondary">Add New Customer</a>
+    <header class="content">
+        <h1 class="header bold">Order Form</h1>
+    </header>
+    <div class="content">
+        <div class="customer-wrapper">
+            <div>
+                <form>
+                    <label for="order_customer_name">Customer Name</label>
+                    <select name="order_customer_name" id="order_customer_name" value="andrey_bonanza">
+                        <option value="andrey_bonanza">Andrey Bonanza</option>
+                        <option value="elyzza_gonzales">Elyzza Gonzales</option>
+                        <option value="erin_carandang">Erin Carandang</option>
+                        <option value="jenny_peng">Jenny Peng</option>
+                        <option value="seirus_alonzo">Seirus Alonzo</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                <a href="../../customers/html/addcustomer.html">
+                    <button class="primary long"> Add Customer </button>
+                    </a> 
+            </div>
         </div>
-        <div>
-            <img src="../assets/small_beef_balls_rice.png">
-            <p>Beef Balls Rice</p>
-            <p>Php 69.00</p>
-            <form>
-                <input type="number" id="beef_balls_rice_amount" name="beef_balls_rice_amount" value="2"> 
-            </form>
-        </div>
-        <div>
-            <img src="../assets/small_sweet_and_sour_pork.png">
-            <p>Sweet and Sour Pork</p>
-            <p>Php 67.00</p>
-            <form>
-                <input type="number" id="sweet_and_sour_pork_amount" name="sweet_and_sour_pork_amount" value="2"> 
-            </form>
-        </div>
-        <div>
-            <img src="../assets/small_quails_egg_siomai.png">
-            <p>Quail's Egg Siomai</p>
-            <p>Php 69.00</p>
-            <form>
-                <input type="number" id="squails_egg_siomai_amount" name="quails_egg_siomai_amount" value="2"> 
-            </form>
-        </div>
-        <div>
-            <img src="../assets/small_crab_pinchers.png">
-            <p>Crab Pinchers</p>
-            <p>Php 76.00</p>
-            <form>
-                <input type="number" id="scrab_pinchers_amount" name="crab_pinchers_amount" value="3"> 
-            </form>
-        </div>
-        <div>
-            <img src="../assets/small_halo_halo.png">
-            <p>Halo Halo</p>
-            <p>Php 100.00</p>
-            <form>
-                <input type="number" id="halo_halo_amount" name="halo_halo_amount" placeholder="0"> 
-            </form>
-        </div>
-        <div>
-            <h1>Summary</h1>
+        <div class="order-form">
+            <div class="order-wrapper"> 
+                <img src="../assets/small_beef_balls_rice.png">
+                <p>Beef Balls Rice</p>
+                <p>Php 69.00</p>
+                <form>
+                    <input type="number" id="beef_balls_rice_amount" name="beef_balls_rice_amount" value="2"> 
+                </form>
+            </div>
+            <div class="order-wrapper">
+                <img src="../assets/small_sweet_and_sour_pork.png">
+                <p>Sweet and Sour Pork</p>
+                <p>Php 67.00</p>
+                <form>
+                    <input type="number" id="sweet_and_sour_pork_amount" name="sweet_and_sour_pork_amount" value="2"> 
+                </form>
+            </div>
+            <div class="order-wrapper">
+                <img src="../assets/small_quails_egg_siomai.png">
+                <p>Quail's Egg Siomai</p>
+                <p>Php 69.00</p>
+                <form>
+                    <input type="number" id="squails_egg_siomai_amount" name="quails_egg_siomai_amount" value="2"> 
+                </form>
+            </div>
+            <div class="order-wrapper">
+                <img src="../assets/small_crab_pinchers.png">
+                <p>Crab Pinchers</p>
+                <p>Php 76.00</p>
+                <form>
+                    <input type="number" id="scrab_pinchers_amount" name="crab_pinchers_amount" value="3"> 
+                </form>
+            </div>
+            <div class="order-wrapper">
+                <img src="../assets/small_halo_halo.png">
+                <p>Halo Halo</p>
+                <p>Php 100.00</p>
+                <form>
+                    <input type="number" id="halo_halo_amount" name="halo_halo_amount" placeholder="0"> 
+                </form>
+            </div>
+        <div class="order_summary">
+            <div>
+                <h1 class= "bold">Summary</h1>
+            </div>
+            <div>
             <table>
-                <tr>
-                    <td><p>3</p></td>
-                    <td><p>Crab Pinchers</p></td>
-                    <td><p>228.00</p></td>
-                </tr>
-                <tr>
-                    <td><p>2</p></td>
-                    <td><p>Quail's Egg Siomai</p></td>
-                    <td><p>138.00</p></td>
-                </tr>     
-                <tr>
-                    <td><p>2</p></td>
-                    <td><p>Sweet and Sour Pork</p></td>
-                    <td><p>134.00</p></td>     
-                </tr>  
-                <tr>
-                    <td><p>2</p></td>
-                    <td><p>Beef Balls Rice</p></td>
-                    <td><p>138.00</p></td>
-                </tr>          
-            </table>
-            <table>
-                <tr>
-                    <td><h2>Total</h2></td>
-                    <td><h2>Php 638.00</h2></td>
-                </tr>                
-            </table>
-            <form class="save">
-                <input type="submit" class="primary" value="Confirm Order">
-            </form>
-            <a href="orders.html" class="secondary">Cancel Order</a>         
+                    <tr>
+                        <td><p>3</p></td>
+                        <td><p>Crab Pinchers</p></td>
+                        <td><p>228.00</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>2</p></td>
+                        <td><p>Quail's Egg Siomai</p></td>
+                        <td><p>138.00</p></td>
+                    </tr>     
+                    <tr>
+                        <td><p>2</p></td>
+                        <td><p>Sweet and Sour Pork</p></td>
+                        <td><p>134.00</p></td>     
+                    </tr>  
+                    <tr>
+                        <td><p>2</p></td>
+                        <td><p>Beef Balls Rice</p></td>
+                        <td><p>138.00</p></td>
+                    </tr>          
+                </table>
+            </div>
+            <div class="totality-wrapper">
+                <h2 class="body regular light">Total</h2>
+                <p class="subheader bold"> PHP 638.00 </p>
+            </div>
+            <div>
+                <form class="save">
+                    <button class="primary long"> Confirm </button>
+                </form>
+                <form class="save">
+                    <button class="secondary long"> Cancel </button>
+                </form>     
+            </div>
         </div>
     </body>
 </html>
