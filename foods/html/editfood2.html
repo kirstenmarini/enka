@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../css/addedit_food.css">
     <meta charset="utf-8">
     <title> Enka | Food </title>
 </head>
@@ -43,38 +44,54 @@
             </li>  
         </ul>
     </nav>
-        <header>
-            <h1>Add Menu Item</h1>
+        <header class="content">
+            <h1 class="header bold">Add Menu Item</h1>
         </header>    
-        <section>
-            <form>
-                <label for="food_name">Name</label>
-                <input type="text" id="food_name" name="food_name" value="Sweet and Sour Pork">
-            </form>
-            <form>
-                <label for="food_image">Image</label>
-                <input type="file" id="food_image" name="food_image">
-            </form>
-            <form>
-                <label for="price">Price</label>
-                <input type="number" id="price" name="price" value="67">
-            </form>
-            <form>
-                <label for="stocks">Stocks</label>
-                <input type="number" id="stocks" name="stocks" value="20">    
-            </form>
-            <form>
-                <label for="food_description">Name</label>
-                <input type="text" id="food_description" name="food_description" value="Fried pork glazed with sweet and sour sauce">
-            </form>
+        <section class="content">
+            <div class="forms_container">
+                <div id="form_name">
+                    <form > 
+                        <label for="food_name">Name</label>
+                        <input type="text" id="food_name" name="food_name" value="Sweet and Sour Pork">
+                    </form>
+                </div>
+        
+                <div id="form_image">
+                    <form>
+                        <label for="food_image">Image</label>
+                        <input type="file" id="food_image" name="food_image">
+                    </form>
+                </div>
+
+                <div id="form_price">
+                    <form>
+                        <label for="price">Price</label>
+                        <input type="number" id="price" name="price" class="shorter" value="67">
+                    </form>
+                </div>
+            
+                <div id="form_stocks">
+                    <form>
+                        <label for="stocks">Stocks</label>
+                        <input type="number" id="stocks" name="stocks" class="shorter" value="20"> 
+                    </form>    
+                </div>
+                
+                <div id="form_description">
+                    <form>
+                        <label for="food_description">Description</label>
+                        <input type="text" id="food_description" name="food_description" value="Fried pork glazed with sweet and sour sauce">
+                    </form>
+                </div>
+            </div>  
         </section>
-        <div>
-            <form class="save">
-                <input type="submit" class="primary" value="Save">
-            </form>
-        </div>
-        <div>
-            <a href="foods.html" class="secondary">Cancel</a>
+        <div class="submit">
+            <a href="editfood1.html">
+                <button class="primary long"> Edit </button>
+            </a>
+            <a href="foods.html">
+                <button class="secondary long"> Cancel </button>
+            </a>     
         </div>
     </body>
 </html>
