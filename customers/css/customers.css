@@ -1,0 +1,7 @@
+.customer {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    border-bottom: 1px solid #C5C5C5;   
+    margin-bottom: px;
+    width: 30%;
+}

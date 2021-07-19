@@ -181,11 +181,13 @@ form {
     left: 280px;
     padding: 10px;
     display: grid;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 50% 50%;
+    grid-row-gap: 10px;
 }
 
 .save {
     display:inline;
+    padding: 0px;
 }
 
 /*INPUT FIELDS*/
