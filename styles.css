@@ -181,8 +181,9 @@ form {
     left: 280px;
     padding: 10px;
     display: grid;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 10px;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    direction: rtl;
 }
 
 .save {
