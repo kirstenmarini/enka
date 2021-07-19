@@ -44,49 +44,48 @@
         </ul>
     </nav>
         
-        <header>
+        <header class="content">
             <h1>Order Details</h1>
         </header>
-        <section>
-            <p>07/30/2021</p>
-            <h2>Andrey Bonanza</h2>
-            <div>
-                <h2>Order #0000005</h2>
-                <table>
-                    <tr>
-                        <td><p>3</p></td>
-                        <td><p>Crab Pinchers</p></td>
-                        <td><p>228.00</p></td>
-                    </tr>
-                    <tr>
-                        <td><p>2</p></td>
-                        <td><p>Quail's Egg Siomai</p></td>
-                        <td><p>138.00</p></td>
-                    </tr>     
-                    <tr>
-                        <td><p>2</p></td>
-                        <td><p>Sweet and Sour Pork</p></td>
-                        <td><p>134.00</p></td>     
-                    </tr>  
-                    <tr>
-                        <td><p>2</p></td>
-                        <td><p>Beef Balls Rice</p></td>
-                        <td><p>138.00</p></td>
-                    </tr>          
-                </table>
-                <table>
-                    <tr>
-                        <td><h2>Total</h2></td>
-                        <td><h2>Php 638.00</h2></td>
-                    </tr>                
-                </table>
+        <section class="content">
+            <p class="bold light">07/30/2021</p>
+            <h2 class="bold">Andrey Bonanza</h2>
+            <div class="view_order_sum">
+                <div id="order_no"><h2 class="bold orange">Order #0000005</h2></div>
+                    <div id="order_table">
+                        <table>
+                            <tr>
+                                <td>3</td>
+                                <td>Crab Pinchers</td>
+                                <td>228.00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Quail's Egg Siomai</td>
+                                <td>138.00/td>
+                            </tr>     
+                            <tr>
+                                <td>2</td>
+                                <td>Sweet and Sour Pork</td>
+                                <td>134.00</td>     
+                            </tr>  
+                            <tr>
+                                <td>2</td>
+                                <td>Beef Balls Rice</td>
+                                <td>138.00</td>
+                            </tr>          
+                        </table>
+                    </div>
+                <div id="total_label"><h2 class="bold light">Total</h2></div>
+                <div id="total_amount"><h2>Php 638.00</h2></div>
             </div>
         </section>
-        <div>
-            <a href="foods.html" class="secondary">Back</a>
-        </div>
-        <div>
-            <a href="editfood4.html" class="primary">Edit</a>
-        </div>
+        <div class="submit">
+            <a href="editfood5.html">
+                <button class="primary long">Edit</button>
+            </a>
+            <a href="foods.html">
+                <button class="secondary long">Back</button>
+            </a>
     </body>
 </html>

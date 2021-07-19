@@ -184,6 +184,7 @@ form {
     grid-template-columns: 50% 50%;
     grid-column-gap: 10px;
     direction: rtl;
+    margin-top: 28px;
 }
 
 .save {
@@ -240,3 +241,17 @@ td {
     padding: 5px 0;
 }
 
+#total_amount > h2 {
+    text-align: right;
+}
+
+.order_sum_table td:nth-child(1) {
+    font-weight: 700;  
+    font-size: 1.2em;
+}
+
+.order_sum_table td:nth-child(3) {
+    font-weight: 700;  
+    color: #FF906D; 
+    text-align: right;
+}
