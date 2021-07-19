@@ -4,11 +4,13 @@
     display: grid;
     grid-template-columns: 350px 20%;
     align-items:center;
+    margin-bottom: 24px;
 }
 .order-form {
     display: grid;
-    grid-template-columns: 255px 255px 255px;
-    grid-template-rows: 280px 280px;
+    width: 690px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
     grid-gap: 50px;
 }
 
@@ -24,6 +26,10 @@
     transform: translateY(-3px);
     transition: all 0.5s ease;
     border: 1px solid #FF906D;
+}
+
+form {
+    display: inline;
 }
 
 input[type=number] {
@@ -47,7 +53,7 @@ p {
     background:#FFF;
     border-left:1px solid #c5c5c5;
     grid-template-rows: 5% 60% 5% 20%;
-    position:absolute;
+    position:fixed;
     bottom:0px;
     height:100%;
     right:0px;

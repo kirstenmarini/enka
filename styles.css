@@ -46,7 +46,7 @@ td {font-size: 18px;}
 .main-menu {
     background:#FFF;
     border-right:1px solid #c5c5c5;
-    position:absolute;
+    position:fixed;
     top:0;
     bottom:0;
     height:100%;
